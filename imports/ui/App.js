@@ -18,6 +18,7 @@ export default class App extends React.Component {
 };
 
 App.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  todos: PropTypes.object.isRequired
 }
 
