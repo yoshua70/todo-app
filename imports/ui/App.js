@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Todos from './../api/todos';
+
 import TitleBar from './TitleBar';
-import Todos from './Todos';
+import TodosList from './TodosList';
 import AddTodos from './AddTodos';
 
 export default class App extends React.Component {
@@ -10,7 +12,7 @@ export default class App extends React.Component {
     return(
       <div>
         <TitleBar title={this.props.title}/>
-        <Todos/>
+        <TodosList todos={this.props.todos}/>
         <AddTodos/>
       </div>
     );
@@ -19,6 +21,6 @@ export default class App extends React.Component {
 
 App.propTypes = {
   title: PropTypes.string.isRequired,
-  todos: PropTypes.object.isRequired
+  todos: PropTypes.array.isRequired
 }
 

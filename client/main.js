@@ -8,6 +8,9 @@ import App from './../imports/ui/App';
 import {Todos} from './../imports/api/todos';
 
 Meteor.startup(() => {
-  let title = "Todo App"
-  ReactDOM.render(<App title={title} todos={Todos}/>, document.getElementById('app'));
+  Tracker.autorun(() => {
+    let title = "Todo App";
+    let todos = Todos.find().fetch();
+    ReactDOM.render(<App title={title} todos={todos}/>, document.getElementById('app'));
+  })
 });
