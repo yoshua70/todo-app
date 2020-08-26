@@ -15,9 +15,15 @@ $red-alt: darken($red, 20);
   margin-bottom: 1rem;
 }
 
+.todo__name {
+  min-width: 0;
+}
+
 .todo__message {
   font-weight: 300;
   font-size: 1.8rem;
+  min-width: 0;
+  overflow: auto;
 }
 
 .todo__message--done {
