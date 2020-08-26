@@ -1,0 +1,23 @@
+// Color Variables
+$green: #e4ede0;
+$green-alt: darken($green, 20);
+
+$blue: #dfe7ed;
+$blue-alt: darken($blue, 20);
+
+$red: #eddfdf;
+$red-alt: darken($red, 20);
+
+.item {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 1.3rem;
+  padding: 1.3rem;
+}
+
+.item__message {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+}

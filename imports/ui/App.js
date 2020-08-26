@@ -12,8 +12,10 @@ export default class App extends React.Component {
     return(
       <div>
         <TitleBar title={this.props.title}/>
-        <TodosList todos={this.props.todos}/>
-        <AddTodos/>
+        <div className="wrapper">
+          <TodosList todos={this.props.todos}/>
+          <AddTodos/>
+        </div>
       </div>
     );
   }

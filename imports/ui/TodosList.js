@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FlipMove from 'react-flip-move';
 
 import Todo from './Todo';
 
@@ -7,8 +8,8 @@ export default class TodosList extends React.Component {
   renderTodos() {
     if(this.props.todos.length === 0) {
       return (
-        <div>
-          <p>Nothing here!</p>
+        <div className="item">
+          <p className="item__message">Nothing here!</p>
         </div>
       );
     } else {
@@ -20,7 +21,9 @@ export default class TodosList extends React.Component {
   render() {
     return (
       <div>
-        {this.renderTodos()}
+        <FlipMove maintainContainerHeight={true}>
+          {this.renderTodos()}
+        </FlipMove>
       </div>
     );
   }

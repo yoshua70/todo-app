@@ -17,10 +17,10 @@ export default class AddTodos extends React.Component {
   }
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit.bind(this)}>
-          <input type="text" name="todoName" placeholder="Todo name"/>
-          <button>Add Todo</button>
+      <div className="item">
+        <form onSubmit={this.handleSubmit.bind(this)} className="form">
+          <input type="text" name="todoName" placeholder="Todo name" className="form__input"/>
+          <button className="button">Add Todo</button>
         </form>
       </div>
     )

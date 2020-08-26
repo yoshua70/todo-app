@@ -6,15 +6,15 @@ import {Todos} from './../api/todos';
 export default class Todo extends React.Component {
   render() {
     return (
-      <div key={this.props.todo._id}>
+      <div key={this.props.todo._id} class="todo">
         <div>
-          <h3>{this.props.todo.name}</h3>
+          <h3 class="todo__message">{this.props.todo.name}</h3>
         </div>
-        <div>
-          <button>Done</button>
+        <div class="todo__actions">
+          <button className="button">Done</button>
           <button onClick={() => {
             Todos.remove(this.props.todo._id)
-          }}>X</button>
+          }} className="button">X</button>
         </div>
       </div>
     )
