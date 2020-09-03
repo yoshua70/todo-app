@@ -10,6 +10,7 @@ $red-alt: darken($red, 20);
 
 .todo {
   align-items: center;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
@@ -24,6 +25,7 @@ $red-alt: darken($red, 20);
   font-size: 1.8rem;
   min-width: 0;
   overflow: auto;
+  padding: 0 1.3rem;
 }
 
 .todo__actions {
