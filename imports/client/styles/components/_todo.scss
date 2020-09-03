@@ -26,10 +26,6 @@ $red-alt: darken($red, 20);
   overflow: auto;
 }
 
-.todo__message--done {
-  text-decoration: line-through;
-}
-
 .todo__actions {
   flex-shrink: 0;
 }
